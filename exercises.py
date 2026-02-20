@@ -12,14 +12,17 @@ Entrada: "Ana"
 Salida: Hola Ana, bienvenida al curso.
 """
 
+
 def custom_greating(name):
     print(f"Hola {name}, ¿cómo estás el día de hoy?")
+
 
 """
 2.Crea una función suma_lista que reciba una lista de números y devuelva la suma total.
 Entrada: [1, 2, 3, 4]
 Salida: 10
 """
+
 
 def sum_list(numbers: list[int]):
     total = 0
@@ -29,12 +32,14 @@ def sum_list(numbers: list[int]):
 
     return total
 
+
 """
 3.Crea una función contar_elemento que reciba una tupla y un valor, y devuelva cuántas veces
 aparece ese valor.
 Entrada: (1,2,2,3), 2
 Salida: 2
 """
+
 
 def count_tuple_element(tup: tuple, value):
     count = 0
@@ -45,10 +50,12 @@ def count_tuple_element(tup: tuple, value):
 
     return count
 
+
 """
 4.Dado un diccionario que almacene nombres y edades, crea una función que reciba el
 diccionario y devuelva la edad promedio.
 """
+
 
 def age_average(ages: dict[str, int]):
     total = 0
@@ -58,12 +65,15 @@ def age_average(ages: dict[str, int]):
 
     return total / len(ages)
 
+
 """
 5.Crea una función obtener_pares que reciba una lista y devuelva una nueva lista solo con los
 números pares.
 Entrada: [1,2,3,4,5,6]
 Salida: [2,4,6]
 """
+
+
 def get_pairs(numbers: list[int]):
     pairs = []
 
@@ -80,8 +90,10 @@ def get_pairs(numbers: list[int]):
 • Salida: (3,2,1)
 """
 
+
 def invert_tuple(tup: tuple):
     return tup[::-1]
+
 
 """
 7.Crea una función que reciba una lista y devuelva un diccionario donde:
@@ -90,6 +102,7 @@ def invert_tuple(tup: tuple):
 Entrada: [1,2,2,3,1,1]
 Salida: {1:3, 2:2, 3:1}
 """
+
 
 def create_dic_with_vect(list: list):
     dic = {}
@@ -102,20 +115,24 @@ def create_dic_with_vect(list: list):
 
     return dic
 
+
 """
 8.Crea una función que reciba un diccionario de productos y precios, y aplique un descuento del
 10% a todos los valores.
 """
 
+
 def apply_discount(prods: dict[str, float]):
     for prod in prods:
         prods[prod] *= 0.9
+
 
 """
 9.Crea una función que:
 Reciba una lista de diccionarios con estructura:
 Devuelva una lista con los nombres de los estudiantes aprobados (nota >= 4.0).
 """
+
 
 def get_approved_students(students: list[dict[str, float]]):
     approved_students = []
@@ -131,6 +148,7 @@ def get_approved_students(students: list[dict[str, float]]):
 10.Crear una función que reciba dos listas:
 Y devuelve un diccionario combinandolas:
 """
+
 
 def combine_lists(keys: list, values: list):
     return dict(zip(keys, values))
