@@ -12,6 +12,9 @@ Entrada: "Ana"
 Salida: Hola Ana, bienvenida al curso.
 """
 
+def custom_greating(name):
+    print(f"Hola {name}, ¿cómo estás el día de hoy?")
+
 """
 2.Crea una función suma_lista que reciba una lista de números y devuelva la suma total.
 Entrada: [1, 2, 3, 4]
@@ -33,6 +36,14 @@ Entrada: (1,2,2,3), 2
 Salida: 2
 """
 
+def count_tuple_element(tup: tuple, value):
+    count = 0
+
+    for element in tup:
+        if element == value:
+            count += 1
+
+    return count
 
 """
 4.Dado un diccionario que almacene nombres y edades, crea una función que reciba el
@@ -53,6 +64,14 @@ números pares.
 Entrada: [1,2,3,4,5,6]
 Salida: [2,4,6]
 """
+def get_pairs(numbers: list[int]):
+    pairs = []
+
+    for num in numbers:
+        if num % 2 == 0:
+            pairs.append(num)
+
+    return pairs
 
 
 """
@@ -72,6 +91,16 @@ Entrada: [1,2,2,3,1,1]
 Salida: {1:3, 2:2, 3:1}
 """
 
+def create_dic_with_vect(list: list):
+    dic = {}
+
+    for element in list:
+        if element in dic:
+            dic[element] += 1
+        else:
+            dic[element] = 1
+
+    return dic
 
 """
 8.Crea una función que reciba un diccionario de productos y precios, y aplique un descuento del
@@ -87,6 +116,15 @@ def apply_discount(prods: dict[str, float]):
 Reciba una lista de diccionarios con estructura:
 Devuelva una lista con los nombres de los estudiantes aprobados (nota >= 4.0).
 """
+
+def get_approved_students(students: list[dict[str, float]]):
+    approved_students = []
+
+    for student in students:
+        if student["nota"] >= 4.0:
+            approved_students.append(student["nombre"])
+
+    return approved_students
 
 
 """
