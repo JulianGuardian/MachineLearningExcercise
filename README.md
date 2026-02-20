@@ -1,6 +1,6 @@
 # Machine Learning Exercises
 
-Repositorio donde se alojan los ejercicios prácticos solicitados por el docente en **Python** para la asignatura de **Machine Learning**.
+Repositorio perteneciente a **Julián Guardián** y **José Martínez** donde se alojan los ejercicios prácticos solicitados por el docente en **Python** para la asignatura de **Machine Learning**.
 
 ## Contenido principal
 
