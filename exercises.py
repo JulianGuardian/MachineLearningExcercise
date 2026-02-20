@@ -13,7 +13,7 @@ Salida: Hola Ana, bienvenida al curso.
 """
 
 def custom_greating(name):
-    print(f"hola {name}, como estas el dia de hoy?")
+    print(f"Hola {name}, ¿cómo estás el día de hoy?")
 
 """
 2.Crea una función suma_lista que reciba una lista de números y devuelva la suma total.
